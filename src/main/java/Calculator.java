@@ -21,35 +21,22 @@ public class Calculator {
         multiple1();
         divide1();
     }
-    public static void sum1 () {
-        int c;
-        System.out.println(c = a2 + a3);
-
+    public static int sum1() {
+        return a2 + a3;
     }
-    public static void sum2() {
-        int d = a + a1;
-        System.out.println(d);
+    public static int sum2() {
+        return a + a1;
     }
-    public static void subtraction1 () {
-        double e = b3 - b1;
-        System.out.println(e);
+    public static double subtraction1() {
+        return b3 - b1;
     }
-    public static void subtraction2 () {
-        long g = a9 - a;
-        System.out.println(g);
+    public static long subtraction2() {
+        return a9 - a;
     }
-    public static void multiple1 () {
-        long m;
-        if (a8 > b3) {
-            m = a1 * a8;
-        }
-        else {
-            m = a2 * a8;
-        }
-        System.out.println(m);
+    public static long multiple1() {
+        return a1 * a8;
     }
-    public static void divide1 () {
-        double y = b3 / a2;
-        System.out.println(y);
+    public static double divide1() {
+        return b3 / a2;
     }
 }

@@ -5,26 +5,26 @@ public class CalculatorTest {
 
     @Test
     public void checkSum1 () {
-        Assert.assertEquals(Calculator.a2 + Calculator.a3,5);
+        Assert.assertEquals(Calculator.sum1(),5);
     }
     @Test
     public void checkSum2 () {
-        Assert.assertEquals(Calculator.a + Calculator.a1, 1);
+        Assert.assertEquals(Calculator.sum2(), 1);
     }
     @Test
     public void checkSubtraction1 () {
-        Assert.assertEquals(Calculator.b3 - Calculator.b1, 2.3, 0);
+        Assert.assertEquals(Calculator.subtraction1(), 2.3, Double.MIN_VALUE);
     }
     @Test
     public void checkSubtraction2 () {
-        Assert.assertEquals(Calculator.a9 - Calculator.a, 9);
+        Assert.assertEquals(Calculator.subtraction2(), 9);
     }
     @Test
     public void checkMultiple1 () {
-        Assert.assertEquals(Calculator.a1 * Calculator.a8, 8);
+        Assert.assertEquals(Calculator.multiple1(), 8);
     }
     @Test
     public void checkDivide () {
-        Assert.assertEquals(Calculator.b3 / Calculator.a2, 1.75, 0);
+        Assert.assertEquals(Calculator.divide1(), 1.75, Double.MIN_VALUE);
     }
 }
